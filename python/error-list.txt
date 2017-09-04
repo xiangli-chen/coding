@@ -1,0 +1,22 @@
+x++ is invalid
+x = x+1 or x += 1
+
+put multiple statements in one line
+a = 1; b = 2
+
+note that len is a built-in function
+
+range(5,10) # 5 through 9 
+it ends on 9 instead of 10
+
+initialize a matrix
+mat = [[0]*2]*2 # [[0,0],[0,0]]
+mat[0][0] = 1 # [[1,0],[1,0]], copied reference in row
+mat = [[0 for i in range(2)] for j in range(2)] # [[0,0],[0,0]]
+mat[0][0] = 1 # [[1,0],[0,0]]
+
+Return multiple values as a tuple
+def f(n):
+    # do something
+    return a,b # here return a tuple    
+(a, b) = f(n) # must add () for a, b

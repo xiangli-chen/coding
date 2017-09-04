@@ -1,0 +1,20 @@
+set python’s default version to 3.X that open python 3.X by python in command line
+$open ~/.bash_profile
+and then add
+alias python=‘python3’
+run
+$source ~/.bash_profile
+
+check python path
+>>which Python
+
+start ipython
+$ipython
+
+start jupyter
+$jupyter notebook
+
+Check tensorflow version
+```
+import tensorflow as tf
+print(tf.__version__)
