@@ -20,3 +20,11 @@ def f(n):
     # do something
     return a,b # here return a tuple    
 (a, b) = f(n) # must add () for a, b
+
+with tf.Session():
+  return …
+Result is strange
+Should avoid put return statement within with statement
+Right way
+with tf.Session():
+return

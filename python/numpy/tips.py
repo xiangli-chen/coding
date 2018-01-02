@@ -8,11 +8,12 @@ general concepts
 # ndarray object
 import numpy as np
 
-a.ndim a.shape a.size z.dtype
-
 # Create arrays using array function from a Python list or tuple
 a = np.array([1, 2, 3])
 b = np.array([(1, 2, 3), (4, 5, 6)])
+
+# properties
+a.ndim a.shape a.size a.dtype
 
 np.zeros((3,4)) 
 a.fill(0)
@@ -24,8 +25,8 @@ np.ones_like(a) # an array of ones with the same shape and type as a
 np.arrange(10, 30, 5) # [10, 15, 20, 25]
 np.linspace(0, 2, 5) # [0., 0.5, 1., 1.5, 2.]
 
-# Basic Operations
-# Arithmetic operators on array apply elementwise
+# basic operations
+# arithmetic operators on array apply elementwise
 # product operate * operates elementwise in NumPy arrays
 A*B # elementwise product
 A.dot(B) np.dot(A, B) # matrix product
